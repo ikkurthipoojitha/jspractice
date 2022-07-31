@@ -1,0 +1,21 @@
+<html>
+    <body>
+        <script>
+               function Car(company){
+                this.company = company;
+            }
+            Car.prototype.getCompany = function(){
+                return this.company;
+            }
+            function Vehicle(name,price){
+                this.name=name;
+                this.price=price;
+            }
+            var car = new Car("XYZ");
+            Vehicle.prototype=car;
+            var veh = new Vehicle("ABCD",700000);
+            document.writeln(veh.getCompany()+" "+veh.name+" "+veh.price);
+        </script>
+
+</body>
+</html>

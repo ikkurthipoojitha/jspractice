@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script>
+class Sample {
+    constructor() {
+    document.writeln(Sample.display()+"<br>"); 
+    document.writeln(this.constructor.display()); 
+  }
+  static display() {
+      return "static method is invoked"
+  }
+  
+ show() {
+  document.writeln(Sample.display()+"<br>"); 
+  }  
+}
+var t=new Sample();
+t.show();
+</script>
+
+</body>
+</html>
+
+ 

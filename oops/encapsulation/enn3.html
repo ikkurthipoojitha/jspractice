@@ -1,0 +1,41 @@
+<html>
+<body>
+<script>
+class Employee{
+    constructor()
+    {
+       var name;
+       var salary;
+    }
+        getName()
+        {
+          return this.name;
+        }
+      setName(name)
+      {
+        this.name=name;
+      }
+      
+      getSalary()
+      {
+        return this.salary;
+      }
+    setSalary(salary)
+    {
+        if(salary<100000||salary>400000)
+        {
+          alert("Invalid salary");
+        }
+      else
+        {
+          this.salary=salary;
+        }
+    }
+    }
+    var emp=new Employee();
+     emp.setName("Poojitha");
+     emp.setSalary(200000);
+     document.writeln(emp.getName()+" "+emp.getSalary());
+      </script>
+    </body>
+</html>

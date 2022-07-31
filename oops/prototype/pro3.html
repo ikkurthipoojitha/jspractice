@@ -1,0 +1,18 @@
+<html>
+    <body>
+        <script>
+            function student(id,name){
+                this.id = id;
+                this.name = name;
+            }
+            student.prototype.detail = function(){
+                return this.id + " " + this.name;
+            }
+            student.prototype.organization = "ABCD";
+            var s1 = new student(1,"pooja");
+            document.writeln(s1.detail()+"</br>");
+            var s2 = new student(2,"poojitha");
+            document.writeln(s2.id+ " "+s2.name+" "+s2.organization);
+        </script>
+    </body>
+</html>

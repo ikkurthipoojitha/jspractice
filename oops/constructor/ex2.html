@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script>
+class Organization
+{
+  constructor()
+  {
+    this.organization="ABCD";
+  }
+}
+class Student extends Organization {
+  constructor(id,name) {
+   super();
+    this.id=id;
+    this.name=name;
+  } 
+}	
+var std = new Student(1,"poojitha");
+document.writeln(std.id+" "+std.name+" "+std.organization);
+</script>
+
+</body>
+</html>
+
+ 
