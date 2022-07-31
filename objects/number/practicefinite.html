@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script>
+var x=0;
+var y=1;
+var z=-1;
+document.writeln(Number.isFinite(x));
+document.writeln(Number.isFinite(y));
+document.writeln(Number.isFinite(z)); 
+document.writeln(Number.isInteger(x));  
+document.writeln(Number.isInteger(y));  
+document.writeln(Number.isInteger(z));  
+var a="50";  
+var b="50.25"  
+var c="String";  
+var d="50String";  
+var e="50.25String"  
+document.writeln(Number.parseFloat(a)+"<br>");  
+document.writeln(Number.parseFloat(b)+"<br>");  
+document.writeln(Number.parseFloat(c)+"<br>");  
+document.writeln(Number.parseFloat(d)+"<br>");  
+document.writeln(Number.parseFloat(e)+"<br>");   
+document.writeln(Number.parseInt(a)+"<br>");  
+document.writeln(Number.parseInt(b)+"<br>");  
+document.writeln(Number.parseInt(c)+"<br>");  
+document.writeln(Number.parseInt(d)+"<br>");  
+document.writeln(Number.parseInt(e));   
+var fix=98.9721;  
+document.writeln(fix.toFixed()+"<br>");  
+document.writeln(fix.toFixed(2)+"<br>");  
+var ex=989721;  
+document.writeln(ex.toExponential(2)+"<br>");  
+document.writeln(ex.toExponential(4)+"<br>");  
+document.writeln(ex.toExponential(6)+"<br>");  
+var p=98.9721;  
+document.writeln(p.toPrecision(2)+"<br>");  
+document.writeln(p.toPrecision());  
+
+var a1=50;  
+var b1=30;  
+var c1=a1+b1;  
+document.writeln("Before invoking toString(): "+c1+"<br>");  
+var c1=a1.toString()+b1.toString();  
+document.writeln("After invoking toString(): "+c1);  
+
+
+</script>
+
+</body>
+</html>
+
+ 

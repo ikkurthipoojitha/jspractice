@@ -1,0 +1,20 @@
+<html>
+    <body>
+        <script>
+            function student(id,name,dept){
+                this.id = id;
+                this.name = name;
+                this.dept = dept;
+                this.changeDept = changeDept;
+                function changeDept(newDept){
+                    this.dept = newDept;
+                }
+            }
+            studentObject = new student(12,"Poojitha","Javascript");
+            document.writeln(studentObject.id + " "+ studentObject.name+ " "+ studentObject.dept);
+            studentObject.changeDept("React");
+            document.writeln("<br>"+studentObject.id + " "+ studentObject.name+ " "+ studentObject.dept);
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,71 @@
+<html>
+    <body>
+        <script>
+            var a = 10;
+            var b = 20;
+            function arthimetic(){
+                document.writeln(a+b);
+                document.writeln(a-b);
+                document.writeln(a*b);
+                document.writeln(a/b);
+                document.writeln(a%b);
+                document.writeln(a++);
+                document.writeln(a);
+                document.writeln(a--);
+                document.writeln(a);
+                document.writeln(++a);
+            }
+            function comaprison(){
+                document.writeln("--------comparison--------");
+                document.writeln(10==20);
+                document.writeln(10!=20);
+                document.writeln(10>20);
+                document.writeln(10==='10');
+                document.writeln(10===10);
+                document.writeln(10 !== '10');
+                document.writeln(10<2);
+                document.writeln(10>=2);
+                document.writeln(10<=2);
+            }
+            function bitwise(){
+                document.writeln("----------bitwise----------");
+                document.writeln(10==20 & 20==33);
+                document.writeln(10==20 | 20==33);
+                document.writeln(10==20 ^ 20==20);
+                document.writeln(~7);
+                document.writeln(10<<2);
+                document.writeln(10>>2);
+                document.writeln(10>>>2);
+            }
+            function logical(){
+                document.writeln("----------logical----------");
+                document.writeln(10==20 && 20==33);
+                document.writeln(10==20 || 20==33);
+                document.writeln(!(10==20));
+
+            }
+            function assignment(){
+                document.writeln("----------assignment----------");
+                var c = 98;
+                var v = c;
+                document.writeln(v);
+                document.writeln(a += 50);
+                document.writeln(a -= 20);
+                document.writeln(a *= 50);
+                document.writeln(a /= 50);
+                document.writeln(a %= 10);
+            }
+            function special(){
+                document.writeln("----------special----------");
+                document.writeln(10 == 20 ? true : false);
+
+            }
+            arthimetic();
+            comaprison();
+            bitwise();
+            assignment();
+            logical();
+            special();
+        </script>
+    </body>
+</html>
